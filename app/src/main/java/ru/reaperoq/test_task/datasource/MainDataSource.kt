@@ -32,9 +32,9 @@ class MainDataSource @Inject constructor(
                 val token = response.body()?.data?.token
                 if (token.isNullOrEmpty()) {
                     if (response.body()?.error?.code == 1003) {
-                        Result.failure(Throwable("error_code_1003"))
+                        Result.failure(Throwable(ErrorCodes.ERROR_CODE_1003.name))
                     } else {
-                        Result.failure(Throwable("error_code_other"))
+                        Result.failure(Throwable(ErrorCodes.ERROR_CODE_OTHER.name))
                     }
                 } else {
                     kVault.set("token", token)
@@ -63,9 +63,9 @@ class MainDataSource @Inject constructor(
                 Result.success(response.body()?.data ?: emptyList())
             } else {
                 if (response.body()?.error?.code == 1003) {
-                    Result.failure(Throwable("error_code_1003"))
+                    Result.failure(Throwable(ErrorCodes.ERROR_CODE_1003.name))
                 } else {
-                    Result.failure(Throwable("error_code_other"))
+                    Result.failure(Throwable(ErrorCodes.ERROR_CODE_OTHER.name))
                 }
             }
         } catch (e: Exception) {
