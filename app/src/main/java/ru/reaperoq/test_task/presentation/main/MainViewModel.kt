@@ -32,6 +32,9 @@ class MainViewModel @Inject constructor(
 
     private fun update() {
         if (!viewState.isLoading) {
+            viewState = viewState.copy(
+                isLoading = true
+            )
             viewModelScope.launch {
                 repository.getPayments()
                     .onSuccess { payments ->
