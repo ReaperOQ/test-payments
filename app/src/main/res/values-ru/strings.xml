@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="login_empty">Заполните поле \"Логин\"</string>
+    <string name="password_empty">Заполните поле \"Пароль\"</string>
+    <string name="error_code_1003">Неверный логин или пароль</string>
+    <string name="error_code_other">Ошибка сервера</string>
+    <string name="payments">Платежи</string>
+    <string name="logout">Выйти из аккаунта</string>
+    <string name="payment_id">Номер операции: %d</string>
+    <string name="payment_amount">%s у.е.</string>
+    <string name="error_code_no_internet">Нет подключения к интернету</string>
+    <string name="logout_confirm">Выйти</string>
+    <string name="logout_description">Вы действительно хотите выйти?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+</resources>

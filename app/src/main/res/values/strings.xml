@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" translatable="false">test-task</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="login_empty">Login is empty</string>
+    <string name="password_empty">Password is empty</string>
+    <string name="error_code_1003">Wrong login or password</string>
+    <string name="error_code_other">Server error</string>
+    <string name="payments">Payments</string>
+    <string name="logout">Logout</string>
+    <string name="payment_id">Transaction number: %d</string>
+    <string name="payment_amount">%s c.u.</string>
+    <string name="error_code_no_internet">No internet connection</string>
+    <string name="logout_confirm">Logout</string>
+    <string name="logout_description">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
